@@ -1,30 +1,11 @@
-TypeScript Express Demo
-=======================
+TypeScript Express Send Status with Message Demo
+==================================================
 
-Write express code in typescript.
+Express send statusCode and message together.
 
 ```
 npm install
 npm run demo
 ```
 
-Then visit <http://localhost:3000/typescript>, you will see `Hello, typescript`.
-
-My question is:
-
-I've already set:
-
-```
-"noImplicitAny": true,
-```
-
-in `tsconfig.json`, but in the `server.ts`, I didn't specify the type for `req` and `res`,
-but typescript doesn't report any errors:
-
-```
-app.get('/:name', (req, res) => {
-   ...
-})
-```
-
-Why?
+Then visit http://localhost:3000, see the status code and message.

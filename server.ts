@@ -2,9 +2,8 @@ import * as express from 'express';
 
 const app = express();
 
-app.get('/:name', (req, res) => {
-  const name = req.params.name;
-  res.send(`Hello, ${name}`);
+app.get('/', (req, res) => {
+  res.status(400).end('status code and message')
 });
 
 app.listen(3000, () => {
